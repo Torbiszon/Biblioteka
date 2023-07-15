@@ -1,0 +1,40 @@
+﻿<Window x:Class="Biblioteka.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Logowanie" Height="450" Width="800">
+    <Grid Width="400" Height="400">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="exceptions"  Grid.Row="0" Foreground="Red" Visibility="Hidden"/>
+        <TextBlock Text="Nazwa użytkownika" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="login" Grid.Row="1" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="2" Text="Hasło" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <PasswordBox x:Name="password" Grid.Row="3" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="4" Text="Powtórz Hasło" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <PasswordBox x:Name="rePassword" Grid.Row="5" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="6" Text="Imię" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="firstname" Grid.Row="7" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="8" Text="Nazwisko" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="lastname" Grid.Row="9" VerticalContentAlignment="Center"/>
+        <Button Grid.Row="10" Content="Login" Margin="0,5,0,2" Click="Register_Click"/>
+        <Button Grid.Row="11" Content="Powrót" Margin="0,2,0,5" Click="Back_Click"/>
+    </Grid>
+</Window>
