@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteka"
         mc:Ignorable="d"
-        Title="Logowanie" Height="450" Width="800">
+        Title="Rejestracja" Height="450" Width="800"
+        ResizeMode="NoResize">
     <Grid Width="400" Height="400">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -34,7 +35,7 @@
         <TextBox x:Name="firstname" Grid.Row="7" VerticalContentAlignment="Center"/>
         <TextBlock Grid.Row="8" Text="Nazwisko" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
         <TextBox x:Name="lastname" Grid.Row="9" VerticalContentAlignment="Center"/>
-        <Button Grid.Row="10" Content="Login" Margin="0,5,0,2" Click="Register_Click"/>
+        <Button Grid.Row="10" Content="Prześlij" Margin="0,5,0,2" Click="Register_Click"/>
         <Button Grid.Row="11" Content="Powrót" Margin="0,2,0,5" Click="Back_Click"/>
     </Grid>
 </Window>

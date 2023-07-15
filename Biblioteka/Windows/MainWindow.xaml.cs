@@ -36,7 +36,9 @@ namespace Biblioteka
             {
                 if(user.Password.Equals(password.Password.ToString()))
                 {
-                    //
+                    var window = new MenuWindow(dbcontext, user.Id);
+                    window.Show();
+                    this.Close();
                 }
                 else
                 {
