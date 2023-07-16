@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
 
         <Button Grid.Row="0" Content="Książki" Margin="0,5,0,2" Click="Books_Click"/>
-        <Button Grid.Row="1" Content="Moje książki" Margin="0,2,0,5" Click="MyBooks_Click"/>
+        <Button x:Name="myBooks"  Grid.Row="1" Content="Moje książki" Margin="0,2,0,5" Click="MyBooks_Click"/>
         <Button Grid.Row="2" Content="Wyloguj" Margin="0,2,0,5" Click="Logout_Click"/>
         <Button x:Name="addAuthor" Grid.Row="3" Content="Dodaj autora" Margin="0,2,0,5" Click="AddAuthor_Click" Background="LightYellow" Visibility="Hidden"/>
         <Button x:Name="addBook" Grid.Row="4" Content="Dodaj książkę" Margin="0,2,0,5" Click="AddBook_Click" Background="LightYellow" Visibility="Hidden"/>

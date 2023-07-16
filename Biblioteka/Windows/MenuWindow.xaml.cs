@@ -37,16 +37,20 @@ namespace Biblioteka
                 addBook.Visibility= Visibility.Visible;
                 users.Visibility= Visibility.Visible;
                 photo.Visibility= Visibility.Hidden;
+                myBooks.IsEnabled = false;
             }
         }
         private void Books_Click(object sender, RoutedEventArgs e)
         {
-
-
+            var window = new BooksWindow(_dbcontext, _id);
+            window.Show();
+            this.Close();
         }
         private void MyBooks_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new MyBooksWindow(_dbcontext, _id);
+            window.Show();
+            this.Close();
 
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -72,10 +76,6 @@ namespace Biblioteka
         private void Users_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-        private void Exception(int i)
-        {
-           
         }
     }
 }

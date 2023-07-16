@@ -21,6 +21,10 @@ namespace Biblioteka
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>();
+            modelBuilder.Entity<Employee>();
+
             modelBuilder.Entity<User>()
                 .HasMany(o => o.BorrowedBooks)
                 .WithMany(o => o.Users);

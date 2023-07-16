@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteka"
         mc:Ignorable="d"
-        Title="Menu" Height="300" Width="420"
+        Title="Dodaj książkę" Height="300" Width="420"
         ResizeMode="NoResize">
     <Grid Width="400" Height="250">
         <Grid.RowDefinitions>
