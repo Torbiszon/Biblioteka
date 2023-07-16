@@ -24,10 +24,12 @@ namespace Biblioteka
     public partial class MenuWindow : Window
     {
         private readonly AppDbContext _dbcontext;
+        private readonly int _id;
         public MenuWindow(AppDbContext dbcontext, int id)
         {
             InitializeComponent();
             _dbcontext = dbcontext;
+            _id = id;
             var user = _dbcontext.Users.FirstOrDefault(o => o.Id.Equals(id));
             if(user.GetType() == typeof(Employee))
             {
@@ -56,12 +58,16 @@ namespace Biblioteka
         }
         private void AddAuthor_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new AddAuthorWindow(_dbcontext, _id);
+            window.Show();
+            this.Close();
 
         }
         private void AddBook_Click(object sender, RoutedEventArgs e)
         {
-            
+            var window = new AddBookWindow(_dbcontext, _id);
+            window.Show();
+            this.Close();
         }
         private void Users_Click(object sender, RoutedEventArgs e)
         {

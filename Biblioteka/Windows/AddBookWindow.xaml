@@ -1,0 +1,44 @@
+﻿<Window x:Class="Biblioteka.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Menu" Height="300" Width="420"
+        ResizeMode="NoResize">
+    <Grid Width="400" Height="250">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="exceptions"  Grid.Row="0" Foreground="Red" Visibility="Hidden"/>
+        <TextBlock Grid.Row="1" Text="Tytuł" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Grid.Row="2" x:Name="title" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="3" Text="Rok wydania" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Grid.Row="4" x:Name="release" VerticalContentAlignment="Center"/>
+        <TextBlock Grid.Row="5" Text="Autor" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <ComboBox Grid.Row="6"  x:Name="authorsList"   
+                                    Width="400" 
+                                    Height="25"
+                                    HorizontalAlignment="Center"   
+                                    VerticalAlignment="Top"  
+                                    BorderThickness="1"  
+                                    VerticalContentAlignment="Center"  
+                                    Padding="2,0,0,0"   
+                                    Background="Transparent"  
+                                    Foreground="Black"  
+                                    IsEditable="True"   
+                                    Margin="0"/>
+            <Button Grid.Row="7" Content="Prześlij" Margin="0,5,0,2" Click="Submit_Click"/>
+        <Button Grid.Row="8" Content="Powrót" Margin="0,2,0,5" Click="Back_Click"/>
+        
+    </Grid>
+</Window>
