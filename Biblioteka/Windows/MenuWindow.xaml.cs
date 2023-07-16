@@ -75,7 +75,9 @@ namespace Biblioteka
         }
         private void Users_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new UsersWindow(_dbcontext, _id);
+            window.Show();
+            this.Close();
         }
     }
 }

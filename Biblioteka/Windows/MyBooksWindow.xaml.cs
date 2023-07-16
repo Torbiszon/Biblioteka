@@ -86,8 +86,8 @@ namespace Biblioteka
             }
             else
             {
-                var msg = new TextBlock() { Text = $"Nie masz żadnych wypożyczonych książek", HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(5, 10, 0, 0) };
-                panel.Children.Add(stackPanel);
+                var msg = new TextBlock() { Text = $"Nie masz żadnych wypożyczonych książek", HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment= VerticalAlignment.Top, Margin = new Thickness(5, 0, 0, 0) };
+                stackPanel.Children.Add(msg);
             }
             
         }

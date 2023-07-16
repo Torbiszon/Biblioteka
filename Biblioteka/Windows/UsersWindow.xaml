@@ -1,0 +1,25 @@
+﻿<Window x:Class="Biblioteka.UsersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Użytkownicy" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0"  Content="Powrót" Height="25" VerticalAlignment="Top" Click="Back_Click"/>
+        <TextBlock x:Name="message" Grid.Row="1" Visibility="Hidden"/>
+        <ScrollViewer Grid.Row="2">
+            <StackPanel x:Name="panel"/>
+        </ScrollViewer>
+    </Grid>
+    
+
+    
+</Window>
