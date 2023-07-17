@@ -3,7 +3,7 @@
 Biblioteka to aplikacja stworzona w celu ułatwienia zarządzania biblioteką oraz usprawnienia pracy zarówno dla pracowników biblioteki, jak i dla klientów. Aplikacja oferuje intuicyjny interfejs użytkownika oparty na technologii XAML, który umożliwia szybkie wyszukiwanie, wypożyczanie i zwrot książek, a także zarządzanie danymi dotyczącymi klientów i księgozbioru.
 # Główne funkcje
 Zarządzanie księgozbiorem: Aplikacja umożliwia pracownikom biblioteki dodawanie, edytowanie i usuwanie książek oraz innych materiałów w bibliotece. Dzięki temu bibliotekarze mogą skutecznie zarządzać kolekcją, aktualizować informacje o dostępności i katalogować nowe pozycje.
-Wypożyczanie i oddawanie książek: Pracownicy biblioteki i klienci mogą korzystać z aplikacji do wypożyczania i oddawania książek. Proces wypożyczania jest uproszczony, a aplikacja śledzi terminy zwrotu i generuje powiadomienia w przypadku opóźnień.
+Wypożyczanie i oddawanie książek: Pracownicy biblioteki i klienci mogą korzystać z aplikacji do wypożyczania i oddawania książek. Proces wypożyczania jest uproszczony.
 Przeglądanie dostępnych materiałów: Klienci biblioteki mogą przeglądać katalog online, sprawdzać dostępność i informacje o książkach
 # Uruchomienie
 1. Należy sklonować repozytorium
